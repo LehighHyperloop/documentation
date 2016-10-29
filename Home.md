@@ -1,4 +1,4 @@
 Welcome to the Documentation wiki!
 
-Topics
-Communication Protocols (TODO)
+Topics:
+- Communication Protocols (TODO)
