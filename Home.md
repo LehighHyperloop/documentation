@@ -1,5 +1,1 @@
-Welcome to the Documentation wiki!
-
-Topics:
--------
-- Communication Protocols (TODO)
+[[Communication Protocols]] - Documents the MQTT communication protocol
