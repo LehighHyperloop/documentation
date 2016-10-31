@@ -1,21 +1,26 @@
-Intro
------
-
 All systems will communicate with the main controller via a [mosquitto](https://mosquitto.org/) MQTT server.
 
+# Protocol
 
-Subsystems
+Topics for controllers will be in the following format:
+```
+/subsystem/<name>(/<verb>)
+{
+    "<attribute>": "<value>",
+    "<attribute>": "<value>",
+    ...
+}
+```
+All subsystem controllers will publish to their respective parent topics with status updates every X ms (TODO: DETERMINE LATENCY ACROSS NETWORK).
+
+Currently used verbs:
+- set
+
+
+# Subsystems
+
+Compressor (`/subsystem/compressor`)
 ----------
-- Compressor
-- Fan
-- Batteries
-
-
-Compressor
-----------
-- /subsystem/compressor/state
-- /subsystem/compressor/set
-
 States:
 - STOPPED
 - VFD_STARTING
@@ -26,11 +31,9 @@ States:
 - FAULT
 - ESTOP
 
-Fan
----
-- /subsystem/fan/state
-- /subsystem/fan/set
 
+Fan (`/subsystem/fan`)
+---
 States:
 - STOPPED
 - STARTING
