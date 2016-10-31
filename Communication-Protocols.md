@@ -52,15 +52,23 @@ States:
 Levitation (`/subsystem/levitation`)
 ------------------------------------
 States:
-- STOPPED
-- RUNNING
+- OFF
+- ON
 - FAULT
 - ESTOP
 
 Inverters (`/subsystem/inverters`)
 ----------------------------------
 States:
-- STOPPED
-- RUNNING
+- OFF
+- ON
+- FAULT
+- ESTOP
+
+Braking (`/subsystem/braking`)
+------------------------------
+States:
+- OFF
+- ON
 - FAULT
 - ESTOP
