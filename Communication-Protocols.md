@@ -11,7 +11,7 @@ Topics for controllers will be in the following format:
     ...
 }
 ```
-All subsystem controllers will publish to their respective parent topics with status updates every X ms (TODO: DETERMINE LATENCY ACROSS NETWORK).
+All subsystem controllers will publish to their respective parent topics with status updates every X ms (TODO: DETERMINE LATENCY ACROSS NETWORK) or during any state change.
 
 Currently used verbs:
 - set
@@ -20,7 +20,7 @@ Currently used verbs:
 # Subsystems
 
 Compressor (`/subsystem/compressor`)
-----------
+------------------------------------
 States:
 - STOPPED
 - VFD_STARTING
@@ -33,11 +33,34 @@ States:
 
 
 Fan (`/subsystem/fan`)
----
+----------------------
 States:
 - STOPPED
-- STARTING
 - RUNNING
-- STOPPING
+- FAULT
+- ESTOP
+
+Propulsion (`/subsystem/propulsion`)
+------------------------------------
+States:
+- STOPPED
+- FORWARD
+- BACKWARD
+- FAULT
+- ESTOP
+
+Levitation (`/subsystem/levitation`)
+------------------------------------
+States:
+- STOPPED
+- RUNNING
+- FAULT
+- ESTOP
+
+Inverters (`/subsystem/inverters`)
+----------------------------------
+States:
+- STOPPED
+- RUNNING
 - FAULT
 - ESTOP
