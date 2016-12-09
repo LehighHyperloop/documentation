@@ -16,6 +16,17 @@ All subsystem controllers will publish to their respective parent topics with st
 Currently used verbs:
 - set
 
+Global
+------
+States:
+- STANDBY
+- PRE_LAUNCH
+- VROOOOOOOOOOM
+- PAST_PUSHER
+- COASTING
+- STOPPED
+- DISENGAGED
+
 
 # Subsystems
 
