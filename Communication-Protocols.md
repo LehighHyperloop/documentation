@@ -56,23 +56,22 @@ Propulsion (`/subsystem/propulsion`)
 States:
 - STOPPED
 - FORWARD
-- BACKWARD
 - FAULT
 - ESTOP
 
 Levitation (`/subsystem/levitation`)
 ------------------------------------
 States:
-- OFF
-- ON
+- STOPPED
+- RUNNING
 - FAULT
 - ESTOP
 
 Inverters (`/subsystem/inverters`)
 ----------------------------------
 States:
-- OFF
-- ON
+- STOPPED
+- RUNNING
 - FAULT
 - ESTOP
 
