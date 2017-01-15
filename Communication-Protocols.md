@@ -55,7 +55,7 @@ Propulsion (`/subsystem/propulsion`)
 ------------------------------------
 States:
 - STOPPED
-- FORWARD
+- RUNNING
 - FAULT
 - ESTOP
 
