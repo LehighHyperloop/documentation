@@ -34,11 +34,11 @@ Compressor (`/subsystem/compressor`)
 ------------------------------------
 States:
 - STOPPED
-- VFD_STARTING
-- COMPRESSOR_STARTING
+- VFD_STARTING (Not assignable)
+- COMPRESSOR_STARTING (Not assignable)
 - RUNNING
-- COMPRESSOR_STOPPING
-- VFD_STOPPING
+- COMPRESSOR_STOPPING (Not assignable)
+- VFD_STOPPING (Not assignable)
 - FAULT
 - ESTOP
 
